@@ -1,1 +1,1 @@
-web: cd backend && gunicorn my_django_project.wsgi --bind 0.0.0.0:$PORT
+web: cd backend && python manage.py collectstatic --noinput && gunicorn my_django_project.wsgi --bind 0.0.0.0:$PORT
