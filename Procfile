@@ -1,1 +1,0 @@
-web: cd project && gunicorn my_django_project.wsgi --bind 0.0.0.0:$PORT
